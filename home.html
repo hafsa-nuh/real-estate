@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/footer.css">
 
     <!-- google font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css"> -->
     
 </head>
 
@@ -51,9 +52,9 @@
                             <li>
                                 <a href="#property" class="navbar-link" data-nav-link>Property</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
                             </li>
@@ -209,428 +210,545 @@
                 <div class="container">
                     <p class="section-subtitle">Properties</p>
                     <h2 class="h2 section-title">Featured Listings</h2>
-                    <div class="property-list swiper">
-                        <div class="swiper-wrapper">
-                            <article class="property-card swiper-slide">
+                    <div class="property-list has-scrollbar">
+                        <li>
+                            <div class="property-card">
                                 <figure class="card-banner">
-                                    <img src="./assets/images/home1.jpg" alt="" class="w-100">
+                                    <a href="./blog.html">
+                                        <img src="./assets/images/popular1.jpg" alt="New Apartment Nice View" class="w-100">
+                                    </a>
+                                    <div class="card-badge green">For Rent</div>
                                     <div class="banner-actions">
                                         <button class="banner-actions-btn">
                                             <ion-icon name="location"></ion-icon>
-                                            <address>Belmont Gardens, Chicago</address>
+                                            <address> Gardens Estate, Nairobi</address>
                                         </button>
                                         <button class="banner-actions-btn">
                                             <ion-icon name="camera"></ion-icon>
-                                    
                                             <span>4</span>
                                         </button>
-                                    
                                         <button class="banner-actions-btn">
                                             <ion-icon name="film"></ion-icon>
-                                    
                                             <span>2</span>
                                         </button>
                                     </div>
                                 </figure>
                                 <div class="card-content">
-                                
                                     <div class="card-price">
-                                        <strong>$34,900</strong>/Month
+                                        <strong> Ksh 84,900</strong>/Month
                                     </div>
-                                
                                     <h3 class="h3 card-title">
-                                        <a href="#">New Apartment Nice View</a>
+                                        <a href="#">New Estate Nice View</a>
                                     </h3>
-                                
                                     <p class="card-text">
-                                        Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+                                        Beautiful Huge 1 Family House In Heart Of Parklands. Newly Renovated
                                     </p>
-                                
                                     <ul class="card-list">
-                                
                                         <li class="card-item">
                                             <strong>3</strong>
-                                
                                             <ion-icon name="bed-outline"></ion-icon>
-                                
                                             <span>Bedrooms</span>
                                         </li>
-                                
                                         <li class="card-item">
                                             <strong>2</strong>
-                                
                                             <ion-icon name="man-outline"></ion-icon>
-                                
                                             <span>Bathrooms</span>
                                         </li>
-                                
                                         <li class="card-item">
                                             <strong>3450</strong>
-                                
                                             <ion-icon name="square-outline"></ion-icon>
-                                
                                             <span>Square Ft</span>
                                         </li>
-                                
                                     </ul>
-                                
                                 </div>
-                                <!-- </div> -->
-                            </article>
-
-                            <article class="property-card swiper-slide">
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="property-card">
                                 <figure class="card-banner">
-                                    <img src="./assets/images/home2.jpg" alt="" class="w-100">
+                                    <a href="./properties.html">
+                                        <img src="./assets/images/home7.jpg" alt="Modern Apartments" class="w-100">
+                                    </a>
+                                    <div class="card-badge orange">For Sales</div>
                                     <div class="banner-actions">
                                         <button class="banner-actions-btn">
                                             <ion-icon name="location"></ion-icon>
-                                            <address>Belmont Gardens, Chicago</address>
+                                            <address>Kaptembwa, Nakuru</address>
                                         </button>
                                         <button class="banner-actions-btn">
                                             <ion-icon name="camera"></ion-icon>
-                            
-                                            <span>4</span>
+                                            <span>6</span>
                                         </button>
-                            
                                         <button class="banner-actions-btn">
                                             <ion-icon name="film"></ion-icon>
-                            
+                                            <span>3</span>
+                                        </button>
+                                    </div>
+                                </figure>
+                                <div class="card-content">
+                                    <div class="card-price">
+                                        <strong>Ksh 27,000,000</strong>
+                                    </div>
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Modern House</a>
+                                    </h3>
+                                    <p class="card-text">
+                                        Beautiful Huge 1 Family House In Heart Of Nakuru. Newly builded
+                                    </p>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <strong>5</strong>
+                                            <ion-icon name="bed-outline"></ion-icon>
+                                            <span>Bedrooms</span>
+                                        </li>
+                                        <li class="card-item">
+                                            <strong>3</strong>
+                                            <ion-icon name="man-outline"></ion-icon>
+                                            <span>Bathrooms</span>
+                                        </li>
+                                        <li class="card-item">
+                                            <strong>3650</strong>
+                                            <ion-icon name="square-outline"></ion-icon>
+                                            <span>Square Ft</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner">
+                                    <a href="./blog.html">
+                                        <img src="./assets/images/property.jpg" alt="Comfortable Apartment" class="w-100">
+                                    </a>
+                                    <div class="card-badge green">For Rent</div>
+                                    <div class="banner-actions">
+                                        <button class="banner-actions-btn">
+                                            <ion-icon name="location"></ion-icon>
+                                            <address>Hiltop Apartment, Kisumu</address>
+                                        </button>
+                                        <button class="banner-actions-btn">
+                                            <ion-icon name="camera"></ion-icon>
+                                            <span>5</span>
+                                        </button>
+                                        <button class="banner-actions-btn">
+                                            <ion-icon name="film"></ion-icon>
+                                            <span>1</span>
+                                        </button>
+                                    </div>
+                                </figure>
+                                <div class="card-content">
+                                    <div class="card-price">
+                                        <strong>Ksh 90,000</strong>/Month
+                                    </div>
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Comfortable Apartment</a>
+                                    </h3>
+                                    <p class="card-text">
+                                        Beautiful Huge 1 Family House In Heart Of Kisumu. Newly Renovated With New Wood
+                                    </p>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <strong>4</strong>
+                                            <ion-icon name="bed-outline"></ion-icon>
+                                            <span>Bedrooms</span>
+                                        </li>
+                                        <li class="card-item">
+                                            <strong>2</strong>
+                                            <ion-icon name="man-outline"></ion-icon>
+                                            <span>Bathrooms</span>
+                                        </li>
+                                        <li class="card-item">
+                                            <strong>5450</strong>
+                                            <ion-icon name="square-outline"></ion-icon>
+                                            <span>Square Ft</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner">
+                                    <a href="properties.html">
+                                        <img src="./assets/images/property1.jpg" alt="Luxury villa in Rego Park" class="w-100">
+                                    </a>
+                                    <div class="card-badge orange">For Sales</div>
+                                    <div class="banner-actions">
+                                        <button class="banner-actions-btn">
+                                            <ion-icon name="location"></ion-icon>
+                                            <address>Belmont Gardens, Nairobi</address>
+                                        </button>
+                                        <button class="banner-actions-btn">
+                                            <ion-icon name="camera"></ion-icon>
+                                            <span>3</span>
+                                        </button>
+                                        <button class="banner-actions-btn">
+                                            <ion-icon name="film"></ion-icon>
                                             <span>2</span>
                                         </button>
                                     </div>
                                 </figure>
                                 <div class="card-content">
-                            
                                     <div class="card-price">
-                                        <strong>$34,900</strong>/Month
+                                        <strong>Ksh 90,000,000</strong>
                                     </div>
-                            
                                     <h3 class="h3 card-title">
-                                        <a href="#">New Apartment Nice View</a>
+                                        <a href="#">Luxury villa in Hurlingham Park</a>
                                     </h3>
-                            
                                     <p class="card-text">
-                                        Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+                                        Beautiful Huge  Family House In Heart Of Hurlingham .
                                     </p>
-                            
                                     <ul class="card-list">
-                            
                                         <li class="card-item">
-                                            <strong>3</strong>
-                            
+                                            <strong>7</strong>
                                             <ion-icon name="bed-outline"></ion-icon>
-                            
                                             <span>Bedrooms</span>
                                         </li>
-                            
                                         <li class="card-item">
-                                            <strong>2</strong>
-                            
+                                            <strong>5</strong>
                                             <ion-icon name="man-outline"></ion-icon>
-                            
                                             <span>Bathrooms</span>
                                         </li>
-                            
                                         <li class="card-item">
-                                            <strong>3450</strong>
-                            
+                                            <strong>7850</strong>
                                             <ion-icon name="square-outline"></ion-icon>
-                            
                                             <span>Square Ft</span>
                                         </li>
-                            
                                     </ul>
-                            
                                 </div>
-                                <!-- </div> -->
-                            </article>
-
-                            <article class="property-card swiper-slide">
-                                <figure class="card-banner">
-                                    <img src="./assets/images/home8.jpg" alt="" class="w-100">
-                                    <div class="banner-actions">
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="location"></ion-icon>
-                                            <address>Belmont Gardens, Chicago</address>
-                                        </button>
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="camera"></ion-icon>
-                            
-                                            <span>4</span>
-                                        </button>
-                            
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="film"></ion-icon>
-                            
-                                            <span>2</span>
-                                        </button>
-                                    </div>
-                                </figure>
-                                <div class="card-content">
-                            
-                                    <div class="card-price">
-                                        <strong>$34,900</strong>/Month
-                                    </div>
-                            
-                                    <h3 class="h3 card-title">
-                                        <a href="#">New Apartment Nice View</a>
-                                    </h3>
-                            
-                                    <p class="card-text">
-                                        Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                                    </p>
-                            
-                                    <ul class="card-list">
-                            
-                                        <li class="card-item">
-                                            <strong>3</strong>
-                            
-                                            <ion-icon name="bed-outline"></ion-icon>
-                            
-                                            <span>Bedrooms</span>
-                                        </li>
-                            
-                                        <li class="card-item">
-                                            <strong>2</strong>
-                            
-                                            <ion-icon name="man-outline"></ion-icon>
-                            
-                                            <span>Bathrooms</span>
-                                        </li>
-                            
-                                        <li class="card-item">
-                                            <strong>3450</strong>
-                            
-                                            <ion-icon name="square-outline"></ion-icon>
-                            
-                                            <span>Square Ft</span>
-                                        </li>
-                            
-                                    </ul>
-                            
-                                </div>
-                                <!-- </div> -->
-                            </article>
-
-                            <article class="property-card swiper-slide">
-                                <figure class="card-banner">
-                                    <img src="./assets/images/home7.jpg" alt="" class="w-100">
-                                    <div class="banner-actions">
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="location"></ion-icon>
-                                            <address>Belmont Gardens, Chicago</address>
-                                        </button>
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="camera"></ion-icon>
-                            
-                                            <span>4</span>
-                                        </button>
-                            
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="film"></ion-icon>
-                            
-                                            <span>2</span>
-                                        </button>
-                                    </div>
-                                </figure>
-                                <div class="card-content">
-                            
-                                    <div class="card-price">
-                                        <strong>$34,900</strong>/Month
-                                    </div>
-                            
-                                    <h3 class="h3 card-title">
-                                        <a href="#">New Apartment Nice View</a>
-                                    </h3>
-                            
-                                    <p class="card-text">
-                                        Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                                    </p>
-                            
-                                    <ul class="card-list">
-                            
-                                        <li class="card-item">
-                                            <strong>3</strong>
-                            
-                                            <ion-icon name="bed-outline"></ion-icon>
-                            
-                                            <span>Bedrooms</span>
-                                        </li>
-                            
-                                        <li class="card-item">
-                                            <strong>2</strong>
-                            
-                                            <ion-icon name="man-outline"></ion-icon>
-                            
-                                            <span>Bathrooms</span>
-                                        </li>
-                            
-                                        <li class="card-item">
-                                            <strong>3450</strong>
-                            
-                                            <ion-icon name="square-outline"></ion-icon>
-                            
-                                            <span>Square Ft</span>
-                                        </li>
-                            
-                                    </ul>
-                            
-                                </div>
-                                <!-- </div> -->
-                            </article>
-
-                            <article class="property-card swiper-slide">
-                                <figure class="card-banner">
-                                    <img src="./assets/images/home6.jpg" alt="" class="w-100">
-                                    <div class="banner-actions">
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="location"></ion-icon>
-                                            <address>Belmont Gardens, Chicago</address>
-                                        </button>
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="camera"></ion-icon>
-                            
-                                            <span>4</span>
-                                        </button>
-                            
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="film"></ion-icon>
-                            
-                                            <span>2</span>
-                                        </button>
-                                    </div>
-                                </figure>
-                                <div class="card-content">
-                            
-                                    <div class="card-price">
-                                        <strong>$34,900</strong>/Month
-                                    </div>
-                            
-                                    <h3 class="h3 card-title">
-                                        <a href="#">New Apartment Nice View</a>
-                                    </h3>
-                            
-                                    <p class="card-text">
-                                        Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                                    </p>
-                            
-                                    <ul class="card-list">
-                            
-                                        <li class="card-item">
-                                            <strong>3</strong>
-                            
-                                            <ion-icon name="bed-outline"></ion-icon>
-                            
-                                            <span>Bedrooms</span>
-                                        </li>
-                            
-                                        <li class="card-item">
-                                            <strong>2</strong>
-                            
-                                            <ion-icon name="man-outline"></ion-icon>
-                            
-                                            <span>Bathrooms</span>
-                                        </li>
-                            
-                                        <li class="card-item">
-                                            <strong>3450</strong>
-                            
-                                            <ion-icon name="square-outline"></ion-icon>
-                            
-                                            <span>Square Ft</span>
-                                        </li>
-                            
-                                    </ul>
-                            
-                                </div>
-                                <!-- </div> -->
-                            </article>
-
-                            <article class="property-card swiper-slide">
-                                <figure class="card-banner">
-                                    <img src="./assets/images/home4.jpg" alt="" class="w-100">
-                                    <div class="banner-actions">
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="location"></ion-icon>
-                                            <address>Belmont Gardens, Chicago</address>
-                                        </button>
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="camera"></ion-icon>
-                            
-                                            <span>4</span>
-                                        </button>
-                            
-                                        <button class="banner-actions-btn">
-                                            <ion-icon name="film"></ion-icon>
-                            
-                                            <span>2</span>
-                                        </button>
-                                    </div>
-                                </figure>
-                                <div class="card-content">
-                            
-                                    <div class="card-price">
-                                        <strong>$34,900</strong>/Month
-                                    </div>
-                            
-                                    <h3 class="h3 card-title">
-                                        <a href="#">New Apartment Nice View</a>
-                                    </h3>
-                            
-                                    <p class="card-text">
-                                        Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                                    </p>
-                            
-                                    <ul class="card-list">
-                            
-                                        <li class="card-item">
-                                            <strong>3</strong>
-                            
-                                            <ion-icon name="bed-outline"></ion-icon>
-                            
-                                            <span>Bedrooms</span>
-                                        </li>
-                            
-                                        <li class="card-item">
-                                            <strong>2</strong>
-                            
-                                            <ion-icon name="man-outline"></ion-icon>
-                            
-                                            <span>Bathrooms</span>
-                                        </li>
-                            
-                                        <li class="card-item">
-                                            <strong>3450</strong>
-                            
-                                            <ion-icon name="square-outline"></ion-icon>
-                            
-                                            <span>Square Ft</span>
-                                        </li>
-                            
-                                    </ul>
-                            
-                                </div>
-                                <!-- </div> -->
-                            </article>
-                        </div>
-                        <div class="swiper-pagination"></div>
+                            </div>
+                        </li>
                     </div>
                 </div>
             </section>
 
+            <!-- Features -->
+            <section class="features">
+                <div class="container">
+                    <p class="section-subtitle">Our Aminities</p>
+                    <h2 class="h2 section-title">Building Aminities</h2>
+                    <ul class="features-list">
+                        <li>
+                            <a href="#" class="features-card">
+                                <div class="card-icon">
+                                    <ion-icon name="car-sport-outline"></ion-icon>
+                                </div>
+                                <h3 class="card-title">Parking Space</h3>
+                                <div class="card-btn">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="features-card">
+                                <div class="card-icon">
+                                    <ion-icon name="water-outline"></ion-icon>
+                                </div>
+                                <h3 class="card-title">Swimming Pool</h3>
+                                <div class="card-btn">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="features-card">
+                                <div class="card-icon">
+                                    <ion-icon name="shield-checkmark-outline"></ion-icon>
+                                </div>
+                                <h3 class="card-title">Private Security</h3>
+                                <div class="card-btn">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="features-card">
+                                <div class="card-icon">
+                                    <ion-icon name="fitness-outline"></ion-icon>
+                                </div>
+                                <h3 class="card-title">Medical Center</h3>
+                                <div class="card-btn">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="features-card">
+                                <div class="card-icon">
+                                    <ion-icon name="library-outline"></ion-icon>
+                                </div>
+                                <h3 class="card-title">Library Area</h3>
+                                <div class="card-btn">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="features-card">
+                                <div class="card-icon">
+                                    <ion-icon name="bed-outline"></ion-icon>
+                                </div>
+                                <h3 class="card-title">King Size Beds</h3>
+                                <div class="card-btn">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="features-card">
+                                <div class="card-icon">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <h3 class="card-title">Smart Homes</h3>
+                                <div class="card-btn">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="features-card">
+                                <div class="card-icon">
+                                    <ion-icon name="football-outline"></ion-icon>
+                                </div>
+                                <h3 class="card-title">Kid’s Playland</h3>
+                                <div class="card-btn">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
+            <!-- contact -->
+            <section class="contact">
+                <div class="contact__container container grid">
+                    <div class="contact__images">
+                        <div class="contact__orbe"></div>
+                        <div class="contact__img">
+                            <img src="./assets/images/popular4.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <div class="contact__data">
+                            <p class="section-subtitle">Contact Us</p>
+                            <h2 class="h2 section-title">Easy to Contact Us</h2>
+                            <p class="about-text"> Is there a problem finding your dream home? Need a guide in buying first home ? or need a consultation on residential issues? just contact us</p>
+                        </div>
+                        <div class="contact__card">
+                            <div class="contact__card-box">
+                                <div class="contact__card-info">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                    <div>
+                                        <h3 class="contact__card-title"> Call </h3>
+                                        <p class="contact__card-description">+254 567 456789</p>
+                                    </div>
+                                </div>
+                                <button class="btn contact__card-button"> Call Now </button>
+                            </div>
+
+                            <div class="contact__card-box">
+                                <div class="contact__card-info">
+                                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                                    <div>
+                                        <h3 class="contact__card-title">Chat</h3>
+                                        <p class="contact__card-description">+254 723 444 897</p>
+                                    </div>
+                                </div>
+                                <button class="btn contact__card-button"> Chat Now</button>
+                            </div>
+
+                            <div class="contact__card-box">
+                                <div class="contact__card-info">
+                                    <ion-icon name="videocam-outline"></ion-icon>
+                                    <div>
+                                        <h3 class="contact__card-title">Video Call</h3>
+                                        <p class="contact__card-description">+254 709 567899</p>
+                                    </div>
+                                </div>
+                                <button class="btn contact__card-button"> Video Call Now</button>
+                            </div>
+
+                            <div class="contact__card-box">
+                                <div class="contact__card-info">
+                                    <ion-icon name="mail-open-outline"></ion-icon>
+                                    <div>
+                                        <h3 class="contact__card-title">Email</h3>
+                                        <p class="contact__card-description">Tevinabdert@gmail.com</p>
+                                    </div>
+                                </div>
+                                <button class="btn contact__card-button"> Message Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+            </section>
+
+            <!-- cta -->
+            <section class="cta">
+                <div class="container">
+                    <div class="cta-card">
+                        <div class="card-content">
+                            <h2 class="h2 card-title">Looking for a dream home?</h2>
+                            <p class="card-text">We can help you realize your dream of a new home</p>
+                        </div>
+                        <button class="btn cta-btn">
+                            <span>Explore Properties</span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </section>
 
         </article>
     </main>
 
 
-
-
-
-
-
-
-
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo-light.png" alt="Homeverse logo">
+                    </a>
+                    <p class="section-text">
+                        Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the
+                        printing.
+                    </p>
+                    <ul class="contact-list">
+                        <li>
+                            <a href="#" class="contact-link">
+                                <ion-icon name="location-outline"></ion-icon>
+                                <address>Town, Nairobi , Kenya</address>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+254-709-345673" class="contact-link">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <span>+254-709-345673</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:Tevinabdert@gmail.com" class="contact-link">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <span>Tevinabdert@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social-list">
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-link-box">
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Company</p>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">About</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#" class="footer-link">Blog</a>
+                        </li> -->
+                        <li>
+                            <a href="#" class="footer-link">All Products</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Locations Map</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Services</p>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Order tracking</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Wish List</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Login</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">My account</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Promotional Offers</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Customer Care</p>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Login</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">My account</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Wish List</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Order tracking</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    &copy; 2022 <a href="#">Tevin</a>. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    
+    </footer>
 
 
 
@@ -645,7 +763,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- <script src="./js/swiper-bundle.min.js"></script> -->
 
 </body>
 

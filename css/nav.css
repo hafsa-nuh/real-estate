@@ -424,6 +424,8 @@ button, a { transition: var(--transition); }
     justify-content: center;
   }
 
+  /* rental */
+  
 
 
 
@@ -537,6 +539,8 @@ button, a { transition: var(--transition); }
 
 
 
+
+
   /**
    * FEATURES
    */
@@ -581,6 +585,8 @@ button, a { transition: var(--transition); }
   .blog-title { font-size: 1.25rem; }
 
   .blog .card-meta-list { gap: 30px; } */
+
+  /* rental section */
 
 
 
@@ -931,5 +937,18 @@ button, a { transition: var(--transition); }
   .footer { --fs-5: 1rem; }
 
   .footer-link-box { flex-basis: 700px; }
+
+}
+
+
+@media (max-width:450px){
+
+    html{
+        font-size:50%;
+    }
+
+    .contact .row form .inputBox input{
+        width: 100%;
+    }
 
 }

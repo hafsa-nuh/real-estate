@@ -89,8 +89,6 @@ button {
   cursor: pointer;
 }
 
-/* address { font-style: normal; } */
-
 ion-icon { pointer-events: none; }
 
 html {
@@ -361,147 +359,91 @@ button, a { transition: var(--transition); }
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
-/**
- * responsive for larger than 600px screen
- */
+/**  responsive for larger than 450px screen */
+@media (max-width:450px){
+  html{
+    font-size:50%;
+  }
+  .contact .row form .inputBox input{
+    width: 100%;
+  }
+}
 
+/** responsive for larger than 600px screen */
 @media (min-width: 600px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
+  /** CUSTOM PROPERTY */
   :root {
-
-    /**
-     * typography
-     */
-
+    /** typography */
     --fs-2: 1.875rem;
-
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
-
+  /** REUSED STYLE */
   .container {
     max-width: 550px;
     margin-inline: auto;
   }
-
   .has-scrollbar {
     gap: 25px;
     margin-inline: -25px;
     padding-inline: 25px;
     scroll-padding-left: 25px;
   }
-
   .has-scrollbar > li { min-width: calc(50% - 12.5px); }
 
-
-
-  /**
-   * SERVICE
-   */
-
+  /** SERVICE */
   .service-list > li { width: calc(50% - 15px); }
 
 
-  /**
-   * Contact
-   */
-
+  /** Contact */
   .contact__card{
     grid-template-columns: repeat(2, 200px);
     justify-content: center;
   }
 
-  /* rental */
-  
-
-
-
-  /**
-   * CTA
-   */
-
+  /** CTA */
   .cta-card { --fs-2: 1.5rem; }
 
-
-
-  /**
-   * FOOTER
-   */
-
+  /**  FOOTER */
   .footer-link-box {
     display: flex;
     justify-content: space-between;
     gap: 20px;
   }
-
 }
 
-/**
- * responsive for larger than 768px screen
- */
-
+/** responsive for larger than 768px screen */
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
+  /** CUSTOM PROPERTY */
   :root {
-
-    /**
-     * typography
-     */
-
+    /** typography */
     --fs-1: 2.5rem;
     --fs-5: 0.938rem;
     --fs-6: 0.875rem;
-
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
-
+  /** REUSED STYLE */
   .container { max-width: 720px; }
-
   .btn {
     --fs-5: 1rem;
     padding: 12px 28px;
   }
 
-
-
-  /**
-   * HEADER
-   */
-
+  /** HEADER */
   .header-bottom-actions {
     all: unset;
     display: flex;
     align-items: center;
     gap: 10px;
   }
-
   .header-bottom .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .header-bottom-actions-btn ion-icon { margin-bottom: 0; }
-
   .header-bottom-actions-btn span { display: none; }
-
   .header-bottom-actions-btn {
     background: var(--white);
     width: 50px;
@@ -509,56 +451,32 @@ button, a { transition: var(--transition); }
     box-shadow: var(--shadow-2);
   }
 
-
-
-  /**
-   * HERO
-   */
-
+  /** HERO */
   .hero-content { max-width: 400px; }
 
-
-
-  /**
-   * ABOUT
-   */
-
+  /**  ABOUT */
   .about .section-title { max-width: 30ch; }
-
   .about-text { max-width: 55ch }
-
   .about-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-
-
-
-
-  /**
-   * FEATURES
-   */
-
+  /**  FEATURES */
   .features-list > li { 
     flex: 1 1 35%;
     width: calc(33.33% - 13.33px); 
   }
-
   .features-card { gap: 20px; }
-
   .features-card .card-icon {
     width: 80px;
     height: 80px;
     font-size: 32px;
   }
-
   .features-card .card-title { --fs-6: 1.125rem; }
 
 
-  /**
-   * Contact
-   */
+  /**  Contact */
   .value__container,
   .contact__container{
     grid-template-columns: repeat(2, 1fr);
@@ -571,155 +489,71 @@ button, a { transition: var(--transition); }
     justify-content: initial;
   }
 
-  /**
-   * VALUE
-   */
-   /* .value__images .value__img{
-    width: 220px;
-    height: 260px;
-   } */
-
-
-  
-
-  /**
-   * BLOG
-   */
-
-  /* .blog-card { --fs-7: 0.875rem; }
-
+  /**  BLOG */
+  .blog-card { --fs-7: 0.875rem; }
   .blog-title { font-size: 1.25rem; }
-
-  .blog .card-meta-list { gap: 30px; } */
-
-  /* rental section */
+  .blog .card-meta-list { gap: 30px; }
 
 
-
-  /**
-   * CTA
-   */
-
+  /**  CTA */
   .cta-card { --fs-2: 1.625rem; }
 
-
-
-  /**
-   * FOOTER
-   */
-
+  /**  FOOTER */
   .footer { margin-bottom: 0; }
-
 }
 
-/**
- * responsive for larger than 992px screen
- */
-
+/** responsive for larger than 992px screen */
 @media (min-width: 992px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
+  /**  CUSTOM PROPERTY */
   :root {
-
-    /**
-     * typography
-     */
-
+    /** typography*/
     --fs-1: 3.125rem;
     --fs-4: 1.375rem;
-
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
-
+  /** REUSED STYLE */
   .container { max-width: 970px; }
-
   .btn { padding: 15px 40px; }
 
-
-
-
-
-
-  /**
-   * HERO
-   */
-
+  /** HERO */
   .hero-content {
     max-width: unset;
     margin-bottom: 0;
   }
-
   .hero .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
-
-
-  /**
-   * ABOUT
-   */
-
+  /** ABOUT */
   .about .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 60px;
   }
-
   .about-banner { margin-bottom: 0; }
-
   .about-banner > img { width: 100%; }
 
-
-
-  /**
-   * SERVICE
-   */
-
+  /**  SERVICE */
   .service-list > li { width: calc(33.33% - 20px); }
 
-
-
-  /**
-   * PROPERTY
-   */
-
+  /**  PROPERTY */
   .property-card .card-content { padding-inline: 30px; }
-
   .popular__card{
     width: 230px;
     padding: .5rem .5rem .75rem;
   }
 
-
-
-  /**
-   * FEATURES
-   */
-
+  /**  FEATURES */
   .features-list { column-gap: 30px; }
-
   .features-list > li { 
     flex: 1 1 30%;
-    width: calc(25% - 30px); }
+    width: calc(25% - 30px); 
+  }
 
-
-
-  /**
-   * Contact & VALUE
-   */
-
-  /* .value__container, */
+  /** Contact & VALUE */
   .contact__container{
     align-items: flex;
     column-gap: 5rem;
@@ -751,121 +585,69 @@ button, a { transition: var(--transition); }
     padding: 28px 1.5rem 1.5rem;
   }
 
-  
+  /** BLOG */
+  .blog-title { font-size: 1.375rem; }
 
-
-
-  /**
-   * BLOG
-   */
-
-  /* .blog-title { font-size: 1.375rem; } */
-
-
-
-  /**
-   * CTA
-   */
-
+  /**  CTA */
   .cta-card {
     --fs-2: 1.875rem;
     --fs-5: 1rem;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
   }
-
   .cta-card :is(.card-content, .cta-btn) { margin: 0; }
 
-
-
-  /**
-   * FOOTER
-   */
-
+  /**  FOOTER */
   .footer-top .container {
     display: flex;
     justify-content: space-between;
   }
-
   .footer-brand {
     max-width: 300px;
     margin-bottom: 0;
   }
-
   .footer-link-box { flex-basis: 550px; }
-
 }
 
-/**
- * responsive for larger than 1200px screen
- */
-
+/**  responsive for larger than 1200px screen */
 @media (min-width: 1200px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
+  /**  CUSTOM PROPERTY */
   :root {
-
-    /**
-     * typography
-     */
-
+    /** typography */
     --fs-2: 2.75rem;
     --fs-4: 1.5rem;
-
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
-
+  /**  REUSED STYLE */
   .container { max-width: 1200px; }
-
   .has-scrollbar > li { min-width: calc(33.33% - 16.66px); }
 
-
-
-  /**
-   * HEADER
-   */
-
+  /**  HEADER */
   .header-bottom { padding-block: 30px; }
-
   .header-bottom-actions-btn:last-child,
   .navbar-top,
   .overlay { display: none; }
-
   .navbar,
   .navbar.active { all: unset; }
-
   .navbar-list {
     display: flex;
     align-items: center;
     gap: 30px;
   }
-
   .navbar-link {
     color: var(--dark-jungle-green);
     --fs-5: 1.125rem;
     text-transform: capitalize;
   }
-
   .header { padding-bottom: 114px; }
-
   .header-bottom {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
   }
-
   .header.active .header-bottom {
     position: fixed;
     bottom: auto;
@@ -880,48 +662,25 @@ button, a { transition: var(--transition); }
     100% { transform: translateY(100%); }
   }
 
-
-
-  /**
-   * HERO
-   */
-
+  /** HERO */
   .hero-text {
     padding-left: 30px;
     max-width: 450px;
     margin-bottom: 40px;
   }
 
-
-
-  /**
-   * FEATURES
-   */
-
+  /**  FEATURES */
   .features-card .card-icon {
     width: 100px;
     height: 100px;
     font-size: 45px;
   }
-
   .features-card .card-title { --fs-6: 1.375rem; }
-
   .features-list > li { 
     flex: 1 1 20%;
     width: calc(25% - 30px); }
 
-
-    /**
-   * VALUE
-   */
-   /* .value__container{
-
-   } */
-
-
-  /**
-   * CONTACT
-   */
+  /** CONTACT */
   .contact__images .contact__orbe{
     width: 520px;
     height: 660px;
@@ -937,38 +696,13 @@ button, a { transition: var(--transition); }
     width: 490px;
   }
 
-
-
-  /**
-   * CTA
-   */
-
+  /** CTA */
   .cta-card {
     --fs-2: 2.25rem;
     padding-inline: 60px;
   }
 
-
-
-  /**
-   * FOOTER
-   */
-
+  /** FOOTER */
   .footer { --fs-5: 1rem; }
-
   .footer-link-box { flex-basis: 700px; }
-
-}
-
-
-@media (max-width:450px){
-
-    html{
-        font-size:50%;
-    }
-
-    .contact .row form .inputBox input{
-        width: 100%;
-    }
-
 }

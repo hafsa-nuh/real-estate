@@ -5,17 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <!-- style -->
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/properties.css">
     <link rel="stylesheet" href="./css/footer.css">
 
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css"> -->
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"rel="stylesheet">
+
+    <style>
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after{
+            content: '';
+        }
+        .swiper-button-next,.swiper-button-prev{
+            top: initial;
+            bottom: 0;
+            width: initial;
+            height: initial;
+            background-color: var(--white);
+            border: 2px solid var(--cadet-1);
+            border-radius: .5rem;
+            padding: 6px;
+            font-size: 1.5rem;
+            color: var(--orange-soda);
+
+}
+.swiper-button-next{
+  right: calc(50% - 3rem);
+}
+.swiper-button-prev{
+  left: calc(50% - 3rem);
+}
+    </style>
 </head>
 <body>
 
@@ -77,10 +111,296 @@
             <!-- home -->
 
             <!-- for sale -->
+            <section class="sale-container" id="popular">
+                <div class="container">
+                    <p class="section-subtitle">Recent</p>
+                    <h2 class="h2 section-title">Our Salling Properties</h2>
+                    <p class="about-texth2 section-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
+                        molestiae fugiat. Quos, commodi ad? Adipisci vitae officia amet suscipit. Beatae earum, velit corporis id
+                        reiciendis animi vitae ut in eius?</p>
+                    <div class="popular_container swiper">
+                        <div class="swiper-wrapper">
+                            <article class="popular_card swiper-slide">
+                                <img src="https://i.pinimg.com/564x/db/48/af/db48af9c5c3f71d48620a5625bb0784e.jpg" alt="" class="popular_img">
+                                <div class="popular_data">
+                                    <div class="card-price">
+                                        <strong> Ksh 84,900</strong>/Month
+                                    </div>
+                                    <div class="contents">
+                                        <div class="text">
+                                            <h3 class="h3 card-title">
+                                                <a href="#">The Palace</a>
+                                            </h3>
+                                            <p class="card-text">
+                                                Parklands, Nairobi
+                                            </p>
+                                        </div>
+                                        <div class="details">
+                                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                                        </div>
+                                    </div>
+                            </article>
+            
+                            <article class="popular_card swiper-slide">
+                                <img src="https://i.pinimg.com/564x/f6/27/10/f6271016b1c5abe75743072bb8268b24.jpg" alt="" class="popular_img">
+                                <div class="popular_data">
+                                    <div class="card-price">
+                                        <strong> Ksh 84,900</strong>/Month
+                                    </div>
+                                    <div class="contents">
+                                        <div class="text">
+                                            <h3 class="h3 card-title">
+                                                <a href="#">The Palace</a>
+                                            </h3>
+                                            <p class="card-text">
+                                                Parklands, Nairobi
+                                            </p>
+                                        </div>
+                                        <div class="details">
+                                           
+                                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                                        </div>
+                                    </div>
+                            </article>
+            
+                            <article class="popular_card swiper-slide">
+                                <img src="https://i.pinimg.com/564x/b8/1e/88/b81e88e5e7b94ff94cc937476d013c53.jpg" alt="" class="popular_img">
+                                <div class="popular_data">
+                                    <div class="card-price">
+                                        <strong> Ksh 84,900</strong>/Month
+                                    </div>
+                                    <div class="contents">
+                                        <div class="text">
+                                            <h3 class="h3 card-title">
+                                                <a href="#">The Palace</a>
+                                            </h3>
+                                            <p class="card-text">
+                                                Parklands, Nairobi
+                                            </p>
+                                        </div>
+                                        <div class="details">
+                                            
+                                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                                        </div>
+                                    </div>
+                            </article>
+            
+                            <article class="popular_card swiper-slide">
+                                <img src="https://i.pinimg.com/564x/76/95/81/7695813cfbf275478e5b49f9cd90f1d5.jpg" alt="" class="popular_img">
+                                <div class="popular_data">
+                                    <div class="card-price">
+                                        <strong> Ksh 84,900</strong>/Month
+                                    </div>
+                                    <div class="contents">
+                                        <div class="text">
+                                            <h3 class="h3 card-title">
+                                                <a href="#">The Palace</a>
+                                            </h3>
+                                            <p class="card-text">
+                                                Parklands, Nairobi
+                                            </p>
+                                        </div>
+                                        <div class="details">
+                                            
+                                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                                        </div>
+                                    </div>
+                            </article>
+            
+                            <article class="popular_card swiper-slide">
+                                <img src="https://i.pinimg.com/564x/91/fd/35/91fd3509035d0774a633c3ecafcaf2e3.jpg" alt="" class="popular_img">
+                                <div class="popular_data">
+                                    <div class="card-price">
+                                        <strong> Ksh 84,900</strong>/Month
+                                    </div>
+                                    <div class="contents">
+                                        <div class="text">
+                                            <h3 class="h3 card-title">
+                                                <a href="#">The Palace</a>
+                                            </h3>
+                                            <p class="card-text">
+                                                Parklands, Nairobi
+                                            </p>
+                                        </div>
+                                        <div class="details">
+                                           
+                                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                                        </div>
+                                    </div>
+                            </article>
 
+                            <article class="popular_card swiper-slide">
+                                <img src="https://i.pinimg.com/564x/a0/97/01/a097019a245d5fd01aef10bd7a340cae.jpg" alt="" class="popular_img">
+                                <div class="popular_data">
+                                    <div class="card-price">
+                                        <strong> Ksh 84,900</strong>/Month
+                                    </div>
+                                    <div class="contents">
+                                        <div class="text">
+                                            <h3 class="h3 card-title">
+                                                <a href="#">The Palace</a>
+                                            </h3>
+                                            <p class="card-text">
+                                                Parklands, Nairobi
+                                            </p>
+                                        </div>
+                                        <div class="details">
+                                           
+                                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                                        </div>
+                                    </div>
+                            </article>
+
+                            <article class="popular_card swiper-slide">
+                                <img src="https://i.pinimg.com/564x/03/81/65/03816529ff554fe881b431eb17cce983.jpg" alt="" class="popular_img">
+                                <div class="popular_data">
+                                    <div class="card-price">
+                                        <strong> Ksh 84,900</strong>/Month
+                                    </div>
+                                    <div class="contents">
+                                        <div class="text">
+                                            <h3 class="h3 card-title">
+                                                <a href="#">The Palace</a>
+                                            </h3>
+                                            <p class="card-text">
+                                                Parklands, Nairobi
+                                            </p>
+                                        </div>
+                                        <div class="details">
+                                           
+                                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                                        </div>
+                                    </div>
+                            </article>
+
+                            <article class="popular_card swiper-slide">
+                                <img src="https://i.pinimg.com/564x/a1/a5/78/a1a578beec9a8e6ef00b4c19b0d93d36.jpg" alt="" class="popular_img">
+                                <div class="popular_data">
+                                    <div class="card-price">
+                                        <strong> Ksh 84,900</strong>/Month
+                                    </div>
+                                    <div class="contents">
+                                        <div class="text">
+                                            <h3 class="h3 card-title">
+                                                <a href="#">The Palace</a>
+                                            </h3>
+                                            <p class="card-text">
+                                                Parklands, Nairobi
+                                            </p>
+                                        </div>
+                                        <div class="details">
+                                           
+                                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                                        </div>
+                                    </div>
+                            </article>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class='fas fa-chevron-right'></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class='fas fa-chevron-left'></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- value -->
             <section class="value section" id="value">
+                <div class="value__container container grid">
+                    <div class="value__images">
+                        <div class="value__orbe"></div>
+                        <div class="value__img">
+                            <img src="./assets/images/home5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="value__content">
+                        <p class="section-subtitle">Our Values</p>
+                        <h2 class="h2 section-title">Values We Give To You</h2>
+                        <p class="about-text">We are always ready to help by providing the best service for you. We believe a good place to live can make your life better.</p>
+                        <div class="value__accordion">
+                            <div class="value__accordion-item accordion-open">
+                                <header class="value__accordion-header">
+                                    <ion-icon class="value__accordion-icon" name="shield-checkmark-outline"></ion-icon>
+                                    <h3 class="value__accordion-title">
+                                        Best interest rates on the market
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <ion-icon name="caret-down-outline"></ion-icon>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        The price we provide is the best for you, we gaurantee no price change on your property , due to various unexpected costs that may come.
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="value__accordion-item accordion-open">
+                                <header class="value__accordion-header">
+                                    <ion-icon class="value__accordion-icon" name="close-circle-outline"></ion-icon>
+                                    <h3 class="value__accordion-title">
+                                        Prevent unstable prices
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <ion-icon name="caret-down-outline"></ion-icon>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        The price we provide is the best for you, we gaurantee no price change on your property , due to various
+                                        unexpected costs that may come.
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="value__accordion-item accordion-open">
+                                <header class="value__accordion-header">
+                                    <ion-icon class="value__accordion-icon" name="bar-chart-outline"></ion-icon>
+                                    <h3 class="value__accordion-title">
+                                        Best price on the market
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <ion-icon name="caret-down-outline"></ion-icon>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        The price we provide is the best for you, we gaurantee no price change on your property , due to various
+                                        unexpected costs that may come.
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="value__accordion-item accordion-open">
+                                <header class="value__accordion-header">
+                                    <ion-icon class="value__accordion-icon" name="checkbox-outline"></ion-icon>
+                                    <h3 class="value__accordion-title">
+                                        Security of your data
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <ion-icon name="caret-down-outline"></ion-icon>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        The price we provide is the best for you, we gaurantee no price change on your property , due to various
+                                        unexpected costs that may come.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             
             </section>
 
@@ -431,10 +751,40 @@
     <!-- main.js -->
     <script src="./js/main.js"></script>
 
+    <!--=============== SWIPER JS ===============-->
+    <!-- <script src="./js/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <!-- https://ionic.io/ionicons/usage -->
     <!--- ionicon link --->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- i dont know y its not working externally -->
+    <script>
+        const swiper = new Swiper(".popular_container", {
+            effect: "coverflow",
+            grabCursor: true,
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 3,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        }); 
+          
+    </script>
     
 </body>
 </html>

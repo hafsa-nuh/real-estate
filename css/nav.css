@@ -125,11 +125,6 @@ body {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
-/* .containers {
-  max-width: 1024px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-} */
 
 .grid {
   display: grid;
@@ -564,17 +559,28 @@ button, a { transition: var(--transition); }
   /**
    * Contact
    */
-
+  .value__container,
   .contact__container{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
-  .contact__img{
+  .contact__images{
     order: 1;
   }
   .contact__card{
     justify-content: initial;
   }
+
+  /**
+   * VALUE
+   */
+   /* .value__images .value__img{
+    width: 220px;
+    height: 260px;
+   } */
+
+
+  
 
   /**
    * BLOG
@@ -690,6 +696,10 @@ button, a { transition: var(--transition); }
 
   .property-card .card-content { padding-inline: 30px; }
 
+  .popular__card{
+    width: 230px;
+    padding: .5rem .5rem .75rem;
+  }
 
 
 
@@ -706,18 +716,21 @@ button, a { transition: var(--transition); }
 
 
   /**
-   * Contact
+   * Contact & VALUE
    */
 
+  /* .value__container, */
   .contact__container{
     align-items: flex;
     column-gap: 5rem;
   }
+  .value__images .value__orbe,
   .contact__images .contact__orbe{
     width: 501px;
     height: 641px;
     border-radius: 238px 238px 12px 12px;
   }
+  .value__images .value__img,
   .contact__images .contact__img{
     width: 462px;
     height: 601px;
@@ -898,9 +911,16 @@ button, a { transition: var(--transition); }
     width: calc(25% - 30px); }
 
 
+    /**
+   * VALUE
+   */
+   /* .value__container{
+
+   } */
+
 
   /**
-   * CTA
+   * CONTACT
    */
   .contact__images .contact__orbe{
     width: 520px;

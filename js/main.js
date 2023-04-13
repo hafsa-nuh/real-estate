@@ -49,13 +49,46 @@ window.addEventListener("scroll", function () {
     : header.classList.remove("active");
 });
 
-
-// 
-// var swiper = new Swiper(".mySwiper", {
+// const swiper = new Swiper(".popular_container", {
 //   slidesPerView: 3,
 //   spaceBetween: 30,
+//   loop: true,
+//   centeredSlides: true,
 //   pagination: {
 //     el: ".swiper-pagination",
-//     clickable: true,
+//     type: "fraction",
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
 //   },
 // });
+
+/*=============== VALUE ACCORDION ===============*/
+const accordionItems = document.querySelectorAll(".value__accordion-item");
+
+accordionItems.forEach((item)=>{
+  const accordionHeader = item.querySelector(".value__accordion-header");
+
+  accordionHeader.addEventListener('click', ()=>{
+    const openItem = document.querySelector(".accordion-open");
+
+    if(openItem && openItem!== item){
+      toggleItem(openItem)
+    }
+
+    toggleItem(item)
+  })
+})
+
+const toggleItem = (item)=>{
+  const acordionContent = item.querySelector(".value__accordion-content");
+
+  if (item.classList.contains("accordion-open")){
+    acordionContent.removeAttribute('style')
+    item.classList.remove("accordion-open");
+  }else{
+    acordionContent.style.height = acordionContent.scrollHeight + "px";
+    item.classList.add('accordion-open')
+  }
+}

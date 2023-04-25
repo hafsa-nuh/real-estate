@@ -61,6 +61,7 @@
 \*-----------------------------------*/
 .featured{
   padding-block: var(--section-padding);
+  background: var(--cultured-2);
 }
 
 .featured .box-container{
@@ -218,7 +219,6 @@
 \*-----------------------------------*/
 
 .agents{
-  background: var(--cultured-2);
   padding-block: var(--section-padding);
 }
 
